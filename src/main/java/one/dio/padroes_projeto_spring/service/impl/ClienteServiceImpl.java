@@ -36,13 +36,11 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public Iterable<Cliente> buscarTodos() {
-        // Buscar todos os Clientes.
         return clienteRepository.findAll();
     }
 
     @Override
     public Cliente buscarPorId(Long id) {
-        // Buscar Cliente por ID.
         Optional<Cliente> cliente = clienteRepository.findById(id);
         return cliente.get();
     }

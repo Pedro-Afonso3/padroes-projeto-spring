@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  *
  * @author falvojr
  */
-@FeignClient(name = "viacep", url = "https://viacep.com.br/ws")
+@FeignClient(name = "viacep", url = "https://viacep.com.br/ws")// Procura o cep de um banco de dados
 public interface ViaCepService {
 
     @GetMapping("/{cep}/json/")
